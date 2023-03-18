@@ -1,0 +1,384 @@
+/*-------------------------------------*/
+/*BASIC SETUP*/
+/*-------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+html {
+  background-color: #fff;
+  color: rgb(175, 154, 154);
+  font-family: "lato", "arial", sans-serif;
+  font-weight: 600;
+  font-size: 90%;
+  text-rendering: optimizelegibility;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*-------------------------------------*/
+/*REUSABLE COMPOENTS*/
+/*-------------------------------------*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 1px;
+}
+
+.section {
+  padding: 80px 0;
+}
+/*-------------------------------------*/
+/*HEADINGS*/
+/*-------------------------------------*/
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: orange;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/*-----PARAGRAPH---*/
+.long-copy {
+  line-height: 145%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*-----ICONS---*/
+.infinity img {
+  width: 20px;
+}
+
+.stopwatch img {
+  width: 20px;
+}
+.food img {
+  width: 20px;
+}
+.cart img {
+  width: 20px;
+}
+
+/*-------------------------------------*/
+/*BUTTONS*/
+/*-------------------------------------*/
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: coral;
+  border: 1px solid coral;
+  color: #fff;
+  margin-right: 10px;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid coral;
+  color: coral;
+}
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid coral;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid coral;
+  color: rgb(253, 250, 249);
+}
+/*-------------------------------------*/
+/*HEADER*/
+/*-------------------------------------*/
+
+header {
+  background-image: repeating-linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 60px;
+}
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav li a {
+  color: #fff;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+.section-steps {
+  margin-top: 50px;
+  background-color: rgb(218, 210, 210);
+  color: black;
+}
+.steps-box {
+  margin-top: 30px;
+}
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+.steps-box:last-child {
+  padding-left: 3%;
+}
+.app-screen {
+  width: 40%;
+  margin-left: 20%;
+  margin-bottom: 10%;
+}
+.works-step {
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+.work-step:last-of-type {
+  margin-bottom: 80px;
+}
+.works-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+  float: left;
+  font-size: 150%;
+  margin-right: 2px;
+}
+.btn-app img {
+  height: 120px;
+  width: 120px;
+  margin-right: 40px;
+  align-content: center;
+  display: inline-block;
+}
+/*-------------------------------------*/
+/*Cities*/
+/*-------------------------------------*/
+.section-features h2 {
+  margin-top: 40px;
+}
+.section-steps h2 {
+  margin-top: 40px;
+}
+.oheading {
+  margin-top: 40px;
+}
+.section-cities img{
+  width:80%;
+  height:80%;
+}
+.city-feature img {
+  width: 10px;
+  height: 10px;
+}
+
+.city-feature p {
+  margin-left: 15px;
+  
+ 
+}
+/*-------------------------------------*/
+/*testimonials*/
+/*-------------------------------------*/
+.section-testimonials h2 {
+  margin-top: 40px;
+}
+.section-testimonials {
+  background-image: linear-gradient(rgb(120, 120, 145), rgba(0, 0, 0, 0.8)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+blockquote{
+  padding: 2%;
+  font-style:italic ;
+  line-height: 145%;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+}
+blockquote:after {
+  font-family: Georgia, serif;
+  position: absolute;
+ /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+  float:right;
+  font-size:6em;
+  line-height: 1;
+  right:0;
+  bottom:-0.5em;
+  content: "\201D";
+}
+blockquote footer {
+  padding: 0 2em 0 0;
+  text-align:right;
+}
+blockquote cite:before {
+  content: "\2013";
+}
+cite{
+  font-size:90% ;
+  margin-top:25px;
+  display:block;
+}
+cite img{
+  height:50px;
+  border-radius:50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/*-------------------------------------*/
+/*SIGN UP*/
+/*-------------------------------------*/
+
+.section-plans{
+  margin-top: 40px;
+}
+
+.plan-box{
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #fff;
+}
+.plan-box-div:first-child{
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px ;
+  border-top-right-radius: 5px;
+}
+
+.plan-box-div:last-child{
+  text-align: center;
+}
+
+
+.plan-box div {
+  padding:15px;
+  border-bottom: 1px solid #ebe8e8;
+}
+
+.plan-price{
+  font-size: 300%;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+.plan-price span{
+  font-size:30%;
+  font-weight: 300;
+  
+}
+
+.plan-price-meal{
+  font-size: 80%;
+}
+
+.plan-box-ul{
+  list-style: none;
+  padding-left: 50%;
+}
+
+.plan-box ul li{
+  padding:5px 0 ;
+}
+
